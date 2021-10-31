@@ -1,17 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-body {
-    font-family: 'Inconsolata', monospace;
+/* Remove padding and margin */ 
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-    margin: 40px 0 0 77px;
+.title {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 20px auto 64px 24px;
 }
 
-.row {
+.image {
     display: flex;
+    justify-content: center;
 }
 
-img {
-    width: 539.22px;
+.image img {
+    width: 286px;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.text .text1{
+    padding-left: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.text .text2 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    margin: 0 24px 66px 24px;
+}
+
+.text a {
+    padding: 24px 43px;
+    background: #333333;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+footer{
+    position: absolute;
+    bottom: 24px;
+    width: 100vw;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #BDBDBD;
+}
+
+footer a {
+    color: #BDBDBD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .title {
+        margin: 40px auto 200px 77px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image img {
+        width: 540px;
+        height: auto;
+    }
+
+    .text {
+        max-width: 570px;
+    }
+
+    .text .text1 {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        color: #333333;
+        margin-bottom: 36px;
+    }
+
+    .text .text2 {
+        max-width: 381px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        color: #4F4F4F;
+        margin-bottom: 64px;
+    }
+
+    footer {
+        position: relative;
+    }
 }
